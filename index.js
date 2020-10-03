@@ -1,6 +1,7 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
-const util = require('util')
+const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // array of questions for user
 const questions = [{
@@ -69,6 +70,11 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions).then((response) => {
+        const response = generateMarkdown(response);
+
+        writeToFile('README.md', response);
+    });
 
 }
 
