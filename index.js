@@ -45,9 +45,9 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'What is your Github UserName?',
+        message: 'What is your Github Repository and UserName?',
         name: 'Github',
-        default: 'aznjp'
+        default: 'https://github.com/aznjp'
     },
     {
         type: 'input',
