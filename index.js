@@ -1,6 +1,6 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
-const util = require('util')
+
 
 // array of questions for user
 const questions = [{
@@ -44,9 +44,9 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'What is your Github UserName?',
+        message: 'What is your Github profile link?',
         name: 'Github',
-        default: 'aznjp'
+        default: 'https://github.com/aznjp'
     },
     {
         type: 'input',
@@ -69,7 +69,11 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions).then((response) => {
+        const response = generateMarkdown(response);
 
+        writeToFile('README.md', response);
+    });
 }
 
 // function call to initialize program
