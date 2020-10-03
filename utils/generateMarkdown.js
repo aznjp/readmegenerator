@@ -1,48 +1,47 @@
 // Function to generate markdown for README
 // Format was templated the same as it is shown in professional README files
-function generateMarkdown(response) {
-    return `
-    # ${response.Title}
-
-    ##Table of Contents(TOC)
-    *[Description](#Description)
-
-    *[Installation](#Installation)
-
-    *[Usage](#Usage)
-
-    *[License](#License)
-
-    *[Contributer](#Contributer)
-
-    *[Test](#Test)
+generateMarkdown = response => {
+    return `# ${response.Title}
 
 
 
-    ##Description
-    ${response.Description}
+## Table of Contents
 
-    ##Installation
-    ${response.Installation}
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributing](#Contributing)
+* [Test](#Test)
 
-    ##Usage
-    ${response.Usage}
+## Description
+${response.Description}
 
-    ##License
-    ${response.License}
+## Installation
+${response.Installation}
 
-    ##Contributer
-    ${response.Contributer}
+## Usage
+${response.Usage}
 
-    ##Test
-    ${response.Test}
+## License
+${response.License}  
 
-    Would you like to reach us?
-    If so look for:
+## Badges
+${response.Badges}
 
-    Github: [${response.Github}]
+## Contributing
+${response.Contributing}
 
-    Email: [${response.Email}]
+## Test
+${response.Test}
+
+Would you like to reach us?
+</br>
+Contact Me:
+
+Github: ${response.Github}
+
+Email: ${response.Email}
 `;
 }
 
