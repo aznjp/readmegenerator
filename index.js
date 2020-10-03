@@ -1,7 +1,5 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
-const util = require('util');
-const generateMarkdown = require('./utils/generateMarkdown');
 
 // array of questions for user
 const questions = [{
@@ -45,7 +43,7 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'What is your Github Repository and UserName?',
+        message: 'What is your Github profile link?',
         name: 'Github',
         default: 'https://github.com/aznjp'
     },
@@ -75,7 +73,6 @@ function init() {
 
         writeToFile('README.md', response);
     });
-
 }
 
 // function call to initialize program
