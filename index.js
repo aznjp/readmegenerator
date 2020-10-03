@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
             return console.log(err);
         }
 
-        console.log("Congratulations, your README.md file is now ready for your application!")
+        console.log("Congratulations, your README.md file is now ready for your new application!")
     });
 }
 
