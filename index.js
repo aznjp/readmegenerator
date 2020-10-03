@@ -17,6 +17,11 @@ const questions = [{
     {
         type: 'input',
         message: 'What are the required files necessary to install for this project?',
+        name: 'Installationdetails'
+    },
+    {
+        type: 'input',
+        message: 'What is the code utilized to download these files?',
         name: 'Installation'
     },
     {

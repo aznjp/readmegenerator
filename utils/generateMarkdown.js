@@ -3,8 +3,6 @@
 generateMarkdown = response => {
     return `# ${response.Title}
 
-
-
 ## Table of Contents
 
 * [Description](#Description)
@@ -18,7 +16,9 @@ generateMarkdown = response => {
 ${response.Description}
 
 ## Installation
-${response.Installation}
+${response.Installationdetails}
+
+    ${response.Installation}
 
 ## Usage
 ${response.Usage}
