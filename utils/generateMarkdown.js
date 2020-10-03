@@ -5,7 +5,7 @@ function generateMarkdown(response) {
     # ${response.Title}
 
     ##Table of Contents(TOC)
-    * [Description](#Description)
+    *[Description](#Description)
 
     *[Installation](#Installation)
 
