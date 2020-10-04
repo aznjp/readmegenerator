@@ -33,27 +33,7 @@ const questions = [{
         type: 'list',
         message: 'What are the license(s) placed on this project?',
         name: 'License',
-        choices: [{
-                key: "MIT",
-                value: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-            },
-            {
-                key: "Apache-2.0",
-                value: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-            },
-            {
-                key: "Creative Commons 1.0",
-                value: "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)"
-            },
-            {
-                key: "GPLv3",
-                value: "[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
-            },
-            {
-                key: "WTFPL",
-                value: "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)",
-            },
-        ],
+        choices: ["MIT", "Apache-2.0", "Creative Commons 1.0", "GPLv3", "WTFPL"],
     },
     {
         type: 'input',
