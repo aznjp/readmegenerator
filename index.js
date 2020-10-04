@@ -31,7 +31,7 @@ const questions = [{
     },
     {
         type: 'checkbox',
-        message: 'Media files from assets/images folder that you wish to add to usage section? (NOTE: Screenshots must be "screenshot(#).png" file name and video must be "video.mp4")',
+        message: 'Media files from assets/images folder that you wish to add to usage section? (NOTE: Screenshots must be "screenshot(#).png" file name")',
         name: 'Media',
         choices: ["screenshot1", "screenshot2", "screenshot3", "screenshot4"]
     },

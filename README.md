@@ -12,7 +12,7 @@
 * [Test](#Test)
 
 ## Description
-For any project or repository there needs to be a summary on what the code you have developed actually does. From what the purpose of the application is to how it is utilized; the project needs a good description and a set format to allow for easy reading. This is a command-line application that runs with Node.js that dynamically generates a README.md template and fills in those sections with your inputs.  Certain questions will require specific file formats, but they follow practical naming conventions. If necessary, there is a video enlisted in the assets/images folder to go through the steps of the application.
+For any project or repository there needs to be a summary on what the code you have developed actually does. From what the purpose of the application is to how it is utilized; the project needs a good description and a set format to allow for easy reading. This is a command-line application that runs with Node.js that dynamically generates a README.md template and fills in those sections with your inputs.  Certain questions will require specific file formats, but they follow practical naming conventions. If necessary there is a video enlisted in the assets/images folder to go through the steps of the application.
 
 ## Installation
 Prior to starting this application, you must install the inquirer module and its JSON files
